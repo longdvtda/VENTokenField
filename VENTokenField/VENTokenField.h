@@ -49,6 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) id<VENTokenFieldDataSource> dataSource;
 
 - (void)reloadData;
+- (void)reloadDataNotClearInput;
 - (void)collapse;
 - (nullable NSString *)inputText;
 

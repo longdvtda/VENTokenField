@@ -118,6 +118,11 @@ static const CGFloat VENTokenFieldDefaultMaxHeight          = 150.0;
     [self layoutTokensAndInputWithFrameAdjustment:YES];
 }
 
+- (void)reloadDataNotClearInput
+{
+    [self layoutTokensAndInputWithFrameAdjustment:NO];
+}
+
 - (void)setPlaceholderText:(NSString *)placeholderText
 {
     _placeholderText = placeholderText;
